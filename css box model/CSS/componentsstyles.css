@@ -1,0 +1,44 @@
+/* Main layout container */ 
+.layout { 
+display: flex;              
+/* enables flexbox */ 
+flex-direction: column;     
+height: 100vh;              
+} 
+/* stacks header, middle, footer vertically */ 
+/* full viewport height */ 
+/* Middle section → Sidebar + Main */ 
+.middle { 
+display: flex;              
+flex: 1;                   
+} 
+/* enables side-by-side layout */ 
+ /* takes remaining space between header & footer */ 
+/* Header and Footer styling */ 
+header, footer { 
+background: #2196f3;       
+color: white;               
+ /* blue background */ 
+/* white text */ 
+text-align: center;    
+padding: 10px;          
+} 
+/* Sidebar styling */ 
+aside { 
+background: lightgray;      
+width: 30%;            
+     /* center text horizontally */ 
+    /* inner spacing */ 
+/* light gray background */ 
+     /* takes 30% of middle width */ 
+padding: 10px;          
+    /* inner spacing */ 
+} 
+/* Main content styling */ 
+main { 
+background: #e3f2fd;        
+flex: 1;                   
+/* light blue background */ 
+ /* take remaining width (70%) */ 
+padding: 10px; 
+} 
