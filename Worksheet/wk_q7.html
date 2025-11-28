@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Flex Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;              /* enable flexbox */
+            flex-wrap: wrap;           /* allow items to wrap to next line */
+            justify-content: center;   /* center rows horizontally */
+            gap: 10px;                 /* space between images */
+        }
+
+        .gallery img {
+            width: 200px;              /* base width on large screens */
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Make it more responsive */
+        @media (max-width: 800px) {
+            .gallery img {
+                width: 45%;            /* two per row approx */
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .gallery img {
+                width: 100%;           /* one per row */
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>Photo Gallery</h2>
+
+<div class="gallery">
+    <img src="flower.png" alt="Photo 1">
+    <img src="Screenshot (22).png" alt="Photo 2">
+    <img src="Screenshot (23).png" alt="Photo 3">
+    <img src="Screenshot (24).png" alt="Photo 4">
+    <img src="Screenshot (25).png" alt="Photo 5">
+    <img src="Screenshot (19).png" alt="Photo 6">
+</div>
+
+</body>
+</html>
